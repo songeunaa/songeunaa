@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        box-sizing:border-box;
+        margin:0;
+        padding:0;
+      }
+
+
+      .c1{width:8.33%; float:left; padding:15px;}
+      .c2{width:16.66%; float:left; padding:15px;}
+      .c3{width:25%; float:left; padding:15px;}
+      .c4{width:33.33%; float:left; padding:15px;}
+      .c5{width:41.663%; float:left; padding:15px;}
+      .c6{width:50%; float:left; padding:15px;}
+      .c7{width:58.33%; float:left; padding:15px;}
+      .c8{width:66.66%; float:left; padding:15px;}
+      .c9{width:75%; float:left; padding:15px;}
+      .c10{width:83.33%; float:left; padding:15px;}
+      .c11{width:91.66%; float:left; padding:15px;}
+      .c12{width:100%; float:left; padding:15px;}
+
+      @media only screen and (max-width:768px) {
+        [class*="c"]{
+        width:100%;
+        }
+      }
+      header {
+        height:80px;
+        padding:20px;
+        background-color:#66c0e7;
+      }
+
+      aside{
+        color:#ffffff;
+      }
+      aside li{
+        padding:10px;
+        margin:5px;
+
+      }
+      section#main{
+        padding:15px;
+
+      }
+      section#main p{
+        padding:10px;
+        font-size:0.95em;
+        line-height:130%;
+        padding-left:30px;
+      }
+      footer{
+        height:80px;
+        padding:20px;
+        background-color:#eeeeee;
+        margin-top:35px;
+      }
+
+      footer img{
+        padding-bottom:10px;
+      }
+      body{
+        background-image: url(./img/back_g.png);
+        font-family:"Poppins", san-serif;
+        font-size:12px;
+        color:#666666;
+      }
+      header{
+        background-color:#996699;
+      }
+      header #logo{
+        float:left;
+        margin:0 70px 5px 20px;
+      }
+       #top_menu li{
+        display:inline;
+      }
+      header a {
+        text-decoration: none;
+        color:#ffffff;
+        font-weight:500;
+        padding:8px 15px;
+        border-radius: 25px;
+      }
+      #top_menu li a:hover{
+        color:#f51932;
+        background: #ffffff;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      }
+
+      .container2{
+        background: rgba(156, 171, 236, 0.3);
+        box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
+        border-radius: 50px;
+        padding:20px 0 50px 0;
+        border-radius: 30px;
+        margin-top:40px;
+
+      }
+      .container2_1{
+        background: rgba(156, 171, 236, 0.3);
+        box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
+        border-radius: 50px;
+        padding:20px 0 50px 0;
+        border-radius: 30px;
+        margin-top:30px;
+      }
+      a {text-decoration:none; color:#000000}
+      .clear{
+        clear:both;
+      }
+      .thumnail_main{
+        margin:40px 0 40px 0;
+        display:grid;
+      }
+      .thumnail_main img{
+        max-width:100%;
+        height:auto;
+        width:300px;
+      }
+      .thumnail_main_2 img{
+        max-width:100%;
+        height:auto;
+        width:700px;
+      }
+      .main_img2{
+        border-radius:30px;
+        margin-left:30px;
+      }
+      .container_main{
+        background: rgba(156, 171, 236, 0.3);
+        box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
+        border-radius: 50px;
+        padding:30px;
+        margin-top:40px;
+        margin-right:10px;
+        margin-bottom:40px;
+      }
+      #main_title{
+        margin-bottom:10px;
+        font-size:18px;
+        color:#996699;
+        font-weight:bold;
+        margin-left:30px;
+      }
+      #thumnail_2 #photos{
+        margin-right:40px;
+        margin-top:35px;
+      }
+
+      #thumnail_2 #photos li{
+        display: inline;
+        margin-left:10px;
+        padding: 5px;
+        color: #000000;
+        font-size: 14px;
+        text-decoration: none
+
+      }
+      #thumnail_2 #photos img{
+        border:solid 5px #3d3d3d;
+        border-radius: 50px;
+        border-color:#996699;
+      }
+      #thumnail_2 #photos a:hover img{
+        border:solid 5px #ffffff;
+      }
+
+      footer img{
+        padding-bottom:10px;
+        margin-top:10px;
+        margin-right:10px;
+      }
+      .container2 li{
+        font-size:16px;
+      }
+      .container2 h3{
+        text-align:center;
+      }
+      .container3{
+        background: rgba(156, 171, 236, 0.3);
+        box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
+        border-radius: 50px;
+        border-radius: 30px;
+        margin-top:30px;
+      }
+      .container3 h3{
+          text-align:center;
+      }
+      .col1 {
+        padding:10px;
+      }
+      .col1 img{
+        width:30px;
+        padding-right:10px;
+      }
+      .side_img{
+        margin: 10px 30px 0 0;
+      }
+      .container2 h3 img{
+        padding-right:40px;
+        margin-left:0px;
+        margin-right:100px;
+        max-width:100%;
+      }
+
+      .button{
+        display: inline-block;
+        background: #fff;
+        color: #29323c;
+        padding: 8px 30px;
+        margin: 30px 0;
+        border-radius: 30px;
+        font-weight: bold;
+        text-decoration:none;
+      }
+      .button:hover{
+        background: #ffffff;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      }
+      .main_content{
+        text-align: center;
+        margin-left:50px;
+        margin-top:50px;
+      }
+      .all_content{
+        display:flex;
+      }
+      .container2 li a:hover{
+        color:#f51932;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header class="c12">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img id="logo" src="./img/inside_logo-01.png"></a>
+        <ul id="top_menu">
+          <li><a href="second.html">썸네일</a></li>
+          <li><a href="vc_first.html">비주얼 커뮤니케이션</a></li>
+          <li><a href="wp_first.html">웹 표준 퍼블리싱</a></li>
+          <li><a href="ui_first.html">UI UX</a></li>
+          <li><a href="pj_first.html">프로젝트 스튜디오</a></li>
+        </ul>
+        <div class="clear"></div>
+        </header>
+
+
+        <aside class="c3">
+          <div class="container2">
+          <h3><img class="side_img" src="./img/side1-01.png"></h3>
+          <ul>
+            <li><a href="second.html"><div class="col1"><img src="./img/list_style_first-01.png">  웹 표준 퍼블리싱</div></a>
+
+            </li>
+            <li><a href="third.html"><div class="col1"><img src="./img/list_style_first2-01.png">  UIUX</div></a>
+
+            </li>
+            <li><a href="fourth.html"><div class="col1"><img src="./img/list_style_first3-01.png">  프로젝트스튜디오</div></a>
+
+            </li>
+              <li><a href="fifth.html"><div class="col1"><img src="./img/list_style_first4-01.png">  비주얼커뮤니케이션</div></a>
+
+            </li>
+          </ul>
+          </div>
+        </aside>
+
+        <section id="main" class="c9">
+          <div class="container_main">
+          <div id="main_title">
+            Visual Communication Land
+          </div>
+          <div class="all_content">
+          <div class="thumnail_main">
+              <img class="gif" src="./img/vi_mimo_2.gif" width=200px;>
+              <img class="gif" src="./img/vc_graph-01.png" width=200px;>
+          </div>
+          <div class="main_content">
+          <div class="thumnail_main_2">
+              <img class="main_img2" src="./img/vi_co.png" width=580px;>
+          </div>
+          <div id="thumnail_2">
+             <ul id="photos">
+                     <li><a href="fifth.html"><img src="./img/vc_thum.png"></a></li>
+                     <li><a href="second.html"><img src="./img/web_pu_thum2.png"></a></li>
+                     <li><a href="third.html"><img src="./img/ui_thum.png"></a></li>
+                       <li><a href="fourth.html"><img src="./img/pj_thum.png"></a></li>
+             </ul>
+          </div>
+          </div>
+        </div>
+        </div>
+        </section>
+
+        <footer class="c12">
+          COPYRIGHT (C) Lee Song Eun ALL RIGHT RESERVED
+          <div class="logo">
+            <img src="./img/insta.png" width="30px;"></img>
+            <img src="./img/blog.png" width="30px;"></img>
+            <img src="./img/kakao.png" width="30px;"></img>
+        </div>
+        </footer>
+  </body>
+</html>
